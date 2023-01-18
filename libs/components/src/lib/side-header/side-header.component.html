@@ -1,0 +1,22 @@
+<header>
+    <nav>
+      <div class="sidebar">
+        <div class="sidebar-content">
+          <ul class="lists">
+          <h1 class="appName">{{appName}}</h1>
+          <img src="{{logo}}" class="logo" alt="logo">
+            <li class="list"  *ngFor="let nav of navigationList">
+              <a href="#" class="nav-link" routerLink="/content"  >
+                <i  class="bx bx-home-alt icon"></i>
+                <span  class="link">{{ nav}}</span>
+              </a>
+          
+            </li>
+            
+          </ul>
+       
+      
+        </div>
+        </div>
+        </nav>
+        </header>

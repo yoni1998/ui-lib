@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'frontend-ui';
+  appName = 'frontend-ui';
+  list = ['dataTable', 'footer', 'dropdown', 'form'];
+  logo = 'assets/IMG.jpg';
 }
