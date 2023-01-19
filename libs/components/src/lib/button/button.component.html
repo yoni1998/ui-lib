@@ -1,0 +1,10 @@
+<button
+type="button"
+class="vmm-button"
+[style.background-color]="buttonColor"
+[disabled]="disabled"
+(click)="onClick.emit($event)"
+>
+{{title}}
+<ng-content></ng-content>
+</button>

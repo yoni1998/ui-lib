@@ -11,6 +11,7 @@ export class FooterComponent {
   @Input() linkHeaders: string[] | undefined;
   @Input() linkHeaderOptions: string[] | undefined;
   @Input() version: string | undefined;
+  @Input() footerColor: string | undefined;
 
   // social links here
   @Input() facebookSocialLink: string | undefined;

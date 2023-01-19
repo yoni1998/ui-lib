@@ -1,0 +1,7 @@
+<div class="modal" [style.background-color]="modalColor">
+    <div>
+        <h2>{{ modalTitle }}</h2>
+      {{ modalContent }}
+      <ui-lib-button class="dialogButton"  (onClick)="closeModal()">{{ modalButtonTitle }}</ui-lib-button>
+    </div>
+  </div>

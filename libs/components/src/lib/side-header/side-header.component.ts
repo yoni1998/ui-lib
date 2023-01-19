@@ -9,4 +9,5 @@ export class SideHeaderComponent {
   @Input() appName: string | undefined;
   @Input() navigationList: string[] | undefined;
   @Input() logo: string | undefined;
+  @Input() sideHeaderColor: string | undefined;
 }
