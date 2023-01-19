@@ -1,0 +1,120 @@
+
+
+footer {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer > * {
+    flex: 1 100%;
+   
+}
+.footer-left {
+    margin-right: 1.25rem;
+    margin-bottom: 2rem
+}
+.footer-left img {
+    width: 50%;
+}
+p {
+    margin-left: 1rem;
+}
+h2{
+    font-weight: 600;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6rem;
+    
+}
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+    
+}
+.footer li {
+    line-height: 2rem;
+}
+
+.footer a {
+    text-decoration: none;
+    list-style: none;
+}
+.footer-right {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin-left: 2rem;
+}
+.footer-right li a {
+    text-decoration: none;
+}
+.footer-right > * {
+    flex: 1 50%;
+    margin-right: 1.25rem;
+}
+.box a {
+    color: #999;
+}
+ul ul {
+    list-style-type: none ;
+    margin-left: 7rem;
+}
+.footer-bottom {
+    text-align: center;
+    color: #999;
+    padding-top: 30px;
+    margin-right: 5rem;
+
+}
+.footer-left p {
+    padding-right: 20%;
+    color: #999;
+}
+.socials a {
+background-color: #364a62;
+width: 40px;
+height: 40px;
+display: inline-block;
+margin-top: 2rem;
+margin-left: 2%;
+}
+
+.socials a i {
+    color: #e7f2f4;
+    padding: 10px 12px;
+    font-size: 20px;
+}
+@media screen and (min-width: 600px) {
+
+.footer-right > * {
+    flex: 1;
+}
+.footer-left {
+    flex: 1 0px;
+}
+.footer-right {
+    flex: 2 0px;
+}
+
+}
+
+@media screen and (max-width: 600px) { 
+.footer {
+    padding: 15px;
+}
+.socials a {
+    margin-right: 1rem;
+    margin-left: 3rem;
+}
+
+}
