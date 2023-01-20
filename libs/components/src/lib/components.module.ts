@@ -8,8 +8,9 @@ import { ButtonComponent } from './button/button.component';
 import { ModalDialogComponent } from './modal-dialog/modal-dialog.component';
 import { TextareaComponent } from './textarea/textarea.component';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { InputFieldComponent } from './input-field/input-field.component';
+import { InputLabelComponent } from './input-label/input-label.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
+import { InputFieldComponent } from './input-field/input-field.component';
 
 @NgModule({
   imports: [CommonModule],
@@ -28,8 +29,9 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     ButtonComponent,
     ModalDialogComponent,
     TextareaComponent,
-    InputFieldComponent,
+    InputLabelComponent,
     DropdownComponent,
+    InputFieldComponent,
   ],
   exports: [
     HeaderComponent,
@@ -39,8 +41,9 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     ButtonComponent,
     ModalDialogComponent,
     TextareaComponent,
-    InputFieldComponent,
+    InputLabelComponent,
     DropdownComponent,
+    InputFieldComponent,
   ],
 })
 export class ComponentsModule {}

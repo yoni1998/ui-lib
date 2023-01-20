@@ -1,1 +1,12 @@
-<p>dropdown works!</p>
+<select
+    class="dropdown"
+    title="dropdown"
+    [value]="value"
+    [id]="inputId"
+    [style.width]="width"
+    [disabled]="disabled ? true : null"
+    (input)="onChange($event.target)"
+    (blur)="onTouched()"
+  >
+    <ng-content></ng-content>
+  </select>

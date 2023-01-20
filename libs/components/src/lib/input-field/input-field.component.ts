@@ -6,6 +6,18 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./input-field.component.scss'],
 })
 export class InputFieldComponent {
-  @Input() label: string | undefined;
-  @Input() labelClass: string | undefined;
+  @Input()
+  public disabled = false;
+  @Input()
+  public readonly = false;
+  @Input()
+  public value: number | undefined;
+  @Input()
+  public inputId: string | undefined;
+  @Input()
+  public placeholder = '';
+  @Input()
+  public inputStyle: string | undefined;
+  @Input()
+  public inputClass: string | undefined;
 }

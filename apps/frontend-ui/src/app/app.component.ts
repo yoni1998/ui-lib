@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  constructor() {}
   // header
   appName = 'frontend-ui';
   list = ['dataTable', 'footer', 'dropdown', 'form'];
@@ -29,4 +30,7 @@ export class AppComponent {
   modalContent =
     'the content of this modal is used as an example to prove te concept';
   modalButtonTitle = 'Close';
+
+  // dropdown
+  obj = [{ name: 'lol' }, { name: 'bol' }];
 }
