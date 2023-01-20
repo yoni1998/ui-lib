@@ -16,9 +16,19 @@ import { IconsComponent } from './icons/icons.component';
 import { TableHeaderComponent } from './table/components/table-header/table-header.component';
 import { TableBodyComponent } from './table/components/table-body/table-body.component';
 import { SortIconsComponent } from './table/components/sort-icons/sort-icons.component';
+import { FormComponent } from './form/form.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { CardComponent } from './card/card.component';
+import { DatePickerComponent } from './date-picker/date-picker.component';
+import { ErrorMessageComponent } from './error-message/error-message.component';
+import { FileSelectComponent } from './file-select/file-select.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { TextContainerComponent } from './text-container/text-container.component';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, ReactiveFormsModule, FormsModule],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -42,6 +52,15 @@ import { SortIconsComponent } from './table/components/sort-icons/sort-icons.com
     TableHeaderComponent,
     TableBodyComponent,
     SortIconsComponent,
+    FormComponent,
+    BreadcrumbComponent,
+    CardComponent,
+    DatePickerComponent,
+    ErrorMessageComponent,
+    FileSelectComponent,
+    ProgressBarComponent,
+    TabsComponent,
+    TextContainerComponent,
   ],
   exports: [
     HeaderComponent,
@@ -56,7 +75,15 @@ import { SortIconsComponent } from './table/components/sort-icons/sort-icons.com
     InputFieldComponent,
     TableComponent,
     IconsComponent,
-    TableHeaderComponent,
+    FormComponent,
+    BreadcrumbComponent,
+    CardComponent,
+    DatePickerComponent,
+    ErrorMessageComponent,
+    FileSelectComponent,
+    ProgressBarComponent,
+    TabsComponent,
+    TextContainerComponent,
   ],
 })
 export class ComponentsModule {}
