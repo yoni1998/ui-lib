@@ -1,0 +1,26 @@
+<table class="table">
+<thead class="table-header">
+  <tr>
+    <th>sr</th>
+    <th *ngFor="let column of columns">
+      <ng-container *ngIf="column"> {{ column }}</ng-container>
+      <ng-container *ngIf="column.head" >{{ column.head }}</ng-container>
+      <th *ngIf="isAction">Action</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let data of dataList, let sr=index">
+    <td>{{ sr+1 }}</td>
+    <td *ngFor="let column of columns" >
+      <ng-container *ngIf="column.fieldname"> {{data[column.fieldname]}} </ng-container>
+      <ng-container *ngIf="column;"> {{data[column]}} </ng-container>
+    </td>
+    <td> <ng-container *ngIf="isAction">
+      <button (click)="editItem(data)" style=" height: 2rem;">edit</button>
+      <button (click)="deleteItem(data)" style=" height: 2rem;">delete</button>
+    </ng-container></td>
+
+  </tr>
+
+</tbody>
+</table>

@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+    border: solid 2px black !important;
+ 
+th {
+    border: rgb(90, 90, 90) solid 1px;
+    height: 2rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #068f5d;
+    color: white;
+
+  
+&:hover {
+    background-color: rgb(160, 158, 158);
+    }}
+}  td:hover {
+    background-color: #ddd;
+}

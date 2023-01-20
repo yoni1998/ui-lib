@@ -31,6 +31,24 @@ export class AppComponent {
     'the content of this modal is used as an example to prove te concept';
   modalButtonTitle = 'Close';
 
-  // dropdown
-  obj = [{ name: 'lol' }, { name: 'bol' }];
+  // dropdown and table
+  obj = [
+    { id: 2, name: 'action', email: 'sfsqf', phone: 'lqqlqq' },
+    { id: 3, name: 'name', email: 'sdfqf', phone: 'llqqaaaaao' },
+  ];
+
+  // table
+  tableHeaders = [
+    { head: 'user name', fieldname: 'name' },
+    { head: 'user name', fieldname: 'email' },
+    { head: 'user name', fieldname: 'bol' },
+    { head: 'action', fieldname: '' },
+  ];
+
+  editItem(data: any): void {
+    console.log(data);
+  }
+  deleteItem(data: any): void {
+    console.log(data);
+  }
 }

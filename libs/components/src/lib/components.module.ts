@@ -11,6 +11,11 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { InputLabelComponent } from './input-label/input-label.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { InputFieldComponent } from './input-field/input-field.component';
+import { TableComponent } from './table/table.component';
+import { IconsComponent } from './icons/icons.component';
+import { TableHeaderComponent } from './table/components/table-header/table-header.component';
+import { TableBodyComponent } from './table/components/table-body/table-body.component';
+import { SortIconsComponent } from './table/components/sort-icons/sort-icons.component';
 
 @NgModule({
   imports: [CommonModule],
@@ -32,6 +37,11 @@ import { InputFieldComponent } from './input-field/input-field.component';
     InputLabelComponent,
     DropdownComponent,
     InputFieldComponent,
+    TableComponent,
+    IconsComponent,
+    TableHeaderComponent,
+    TableBodyComponent,
+    SortIconsComponent,
   ],
   exports: [
     HeaderComponent,
@@ -44,6 +54,9 @@ import { InputFieldComponent } from './input-field/input-field.component';
     InputLabelComponent,
     DropdownComponent,
     InputFieldComponent,
+    TableComponent,
+    IconsComponent,
+    TableHeaderComponent,
   ],
 })
 export class ComponentsModule {}

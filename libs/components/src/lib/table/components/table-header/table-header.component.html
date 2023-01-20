@@ -1,0 +1,50 @@
+<div class="header" #head>
+    <div>
+      <h1 *ngIf="title">{{ title }}</h1>
+      <h2 *ngIf="subtitle" class="title">{{ subtitle }}</h2>
+    </div>
+    <ng-content></ng-content>
+    <div class="actions">
+      <ng-container>
+        <span *ngIf="numberOfCheckedItems > 0">Selectie</span>
+        <span *ngIf="numberOfCheckedItems > 1"
+          >: {{ numberOfCheckedItems }} items</span
+        >
+        <span *ngIf="numberOfCheckedItems === 1">: 1 item</span>
+      </ng-container>
+
+      <ng-container>
+        <div *ngFor="let action of actions; trackBy: trackByNaam">
+          <ng-template #noIconButtonTemplate>
+           <!--<button
+              *ngIf="action.multiple || action.single"
+              [disabled]="
+                (!numberOfCheckedItems && !action.single) || action.disabled
+              "
+              [title]="action.disabled ? action.disabledHelperText : ''"
+              (click)="performAction(action)"
+            >
+              {{ action.label }}
+            </button>--> 
+          </ng-template>
+        <!--<ng-container *ngIf="action.iconType; else noIconButtonTemplate">
+            <vmm-uds-action
+              *ngIf="action.multiple || action.single"
+              [disabled]="
+                (!numberOfCheckedItems && !action.single) || action.disabled
+              "
+              [icon]="action.iconType"
+              [title]="action.label"
+              (onClick)="performAction(action)"
+            ></vmm-uds-action>
+          </ng-container>
+        </div>
+      </ng-container>-->  
+     <!-- <vmm-uds-action
+        *ngIf="fullscreen"
+        [icon]="FULL_SCREEN_ICON"
+        [title]="'Scherm maximaliseren'"
+        (onClick)="toggleFullscreenEmit.emit()"
+      ></vmm-uds-action>  </div>-->
+  
+  </div>
