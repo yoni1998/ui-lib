@@ -27,6 +27,7 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TextContainerComponent } from './text-container/text-container.component';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
+import { DynamicFormInputsComponent } from './dynamic-form/components/dynamic-form-inputs/dynamic-form-inputs.component';
 
 @NgModule({
   imports: [CommonModule, ReactiveFormsModule, FormsModule],
@@ -63,6 +64,7 @@ import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
     TabsComponent,
     TextContainerComponent,
     DynamicFormComponent,
+    DynamicFormInputsComponent,
   ],
   exports: [
     HeaderComponent,
@@ -86,6 +88,8 @@ import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
     ProgressBarComponent,
     TabsComponent,
     TextContainerComponent,
+    DynamicFormComponent,
+    DynamicFormInputsComponent,
   ],
 })
 export class ComponentsModule {}
