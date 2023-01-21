@@ -26,6 +26,7 @@ import { FileSelectComponent } from './file-select/file-select.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TextContainerComponent } from './text-container/text-container.component';
+import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 
 @NgModule({
   imports: [CommonModule, ReactiveFormsModule, FormsModule],
@@ -61,6 +62,7 @@ import { TextContainerComponent } from './text-container/text-container.componen
     ProgressBarComponent,
     TabsComponent,
     TextContainerComponent,
+    DynamicFormComponent,
   ],
   exports: [
     HeaderComponent,
