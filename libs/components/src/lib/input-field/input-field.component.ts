@@ -1,23 +1,68 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'ui-lib-input-field',
   templateUrl: './input-field.component.html',
   styleUrls: ['./input-field.component.scss'],
 })
-export class InputFieldComponent {
+export class InputFieldComponent implements OnInit {
   @Input()
-  public disabled = false;
+  disabled = false;
   @Input()
-  public readonly = false;
+  readonly = false;
   @Input()
-  public value: number | undefined;
+  inputId: string | undefined;
   @Input()
-  public inputId: string | undefined;
+  placeholder = '';
   @Input()
-  public placeholder = '';
+  inputClass: string | undefined;
   @Input()
-  public inputStyle: string | undefined;
+  inputWidth: string | undefined;
   @Input()
-  public inputClass: string | undefined;
+  inputHeight: string | undefined;
+  @Input()
+  inputBorder: string | undefined;
+  @Input()
+  inputBorderRadius: string | undefined;
+  @Input()
+  inputIconColor: string | undefined;
+  @Input()
+  inputIconClassNameWithoutPrefix: string | undefined;
+  @Input()
+  inputType: string | undefined;
+
+  @Output() inputValue = new EventEmitter<string>();
+
+  ngOnInit(): void {
+    this.inputTypeCheck();
+  }
+
+  getValue(value: any) {
+    this.inputValue.emit(value);
+  }
+
+  inputTypeCheck(): void {
+    if (
+      this.inputType === 'number' ||
+      this.inputType === 'text' ||
+      this.inputType === 'button' ||
+      this.inputType === 'checkbox' ||
+      this.inputType === 'date' ||
+      this.inputType === 'email' ||
+      this.inputType === 'hidden' ||
+      this.inputType === 'image' ||
+      this.inputType === 'password' ||
+      this.inputType === 'range' ||
+      this.inputType === 'submit' ||
+      this.inputType === 'tel' ||
+      this.inputType === 'url' ||
+      this.inputType === 'timestamp' ||
+      this.inputType === 'search' ||
+      !this.inputType
+    ) {
+      console.log('Type input: ' + this.inputType);
+    } else {
+      console.error('Invalid input type');
+    }
+  }
 }

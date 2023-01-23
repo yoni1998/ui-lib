@@ -51,4 +51,9 @@ export class AppComponent {
   deleteItem(data: any): void {
     console.log(data);
   }
+
+  // inputfield
+  getValue(e: any) {
+    console.log(e);
+  }
 }

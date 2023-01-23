@@ -1,3 +1,4 @@
+import { DynamicFormService } from './dynamic-form/service/dynamic-form.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
@@ -28,6 +29,8 @@ import { TabsComponent } from './tabs/tabs.component';
 import { TextContainerComponent } from './text-container/text-container.component';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { DynamicFormInputsComponent } from './dynamic-form/components/dynamic-form-inputs/dynamic-form-inputs.component';
+import { LabelPositionDirective } from './input-label/directives/label-position.directive';
+import { LabelFontStylePipe } from './input-label/pipes/label-font-style.pipe';
 
 @NgModule({
   imports: [CommonModule, ReactiveFormsModule, FormsModule],
@@ -37,6 +40,7 @@ import { DynamicFormInputsComponent } from './dynamic-form/components/dynamic-fo
       useExisting: TextareaComponent,
       multi: true,
     },
+    DynamicFormService,
   ],
   declarations: [
     HeaderComponent,
@@ -65,6 +69,8 @@ import { DynamicFormInputsComponent } from './dynamic-form/components/dynamic-fo
     TextContainerComponent,
     DynamicFormComponent,
     DynamicFormInputsComponent,
+    LabelPositionDirective,
+    LabelFontStylePipe,
   ],
   exports: [
     HeaderComponent,

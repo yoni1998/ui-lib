@@ -6,9 +6,9 @@
 <ui-lib-input-label [label]="'lol'" >
     <ui-lib-input-field [placeholder]="'haha'"></ui-lib-input-field>
 </ui-lib-input-label>-->
-
-<ui-lib-table [columns]="['name', 'email', 'phone']" [dataList]="obj" [isAction]="true" (EditItem)="editItem($event)" (DeleteItem)="deleteItem($event)"></ui-lib-table>
-
+<ui-lib-input-label [label]="'input'">
+<ui-lib-input-field [placeholder]="''" [inputType]="'number'" [inputIconColor]="'blue'" (inputValue)="getValue($event)"  [inputIconClassNameWithoutPrefix]="'bx-pencil'"  ></ui-lib-input-field>
+</ui-lib-input-label>
 </ui-lib-main-container>
  <ui-lib-footer 
  [footerColor]="'red'"
