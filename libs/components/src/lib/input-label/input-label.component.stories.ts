@@ -17,7 +17,5 @@ const Template: Story<InputLabelComponent> = (args: InputLabelComponent) => ({
 
 export const Primary = Template.bind({});
 Primary.args = {
-  disabled: false,
-  readonly: false,
-  placeholder: '',
+  label: '',
 };

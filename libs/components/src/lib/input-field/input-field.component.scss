@@ -1,7 +1,32 @@
 .inputIcon {
-    margin: 1rem; 
+    margin: 0.4rem; 
     position: relative;
+    font-size: 18px;
+
 }
-span, input {
-    margin: 0.5rem;
+input {
+    margin-top: 0.4rem;
+    display: inline-block;
+    &:focus {
+        transition: ease-in 0.5s;
+        border: 2px solid rgb(32, 114, 29) !important;
+        outline: none;
+    }
 }
+input[type] {
+    font-size: 18px;
+    padding-left: 0.5rem;
+}
+::placeholder {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.2rem;
+}
+@media only screen and (max-width: 1077px) {
+    .inputIcon  {
+        display: none;
+    }
+}
+

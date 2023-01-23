@@ -5,6 +5,6 @@ import { Directive, ElementRef } from '@angular/core';
 })
 export class LabelPositionDirective {
   constructor(private el: ElementRef) {
-    el.nativeElement.style.width = '33%';
+    el.nativeElement.style.width = '10%';
   }
 }
