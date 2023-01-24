@@ -1,10 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IconType } from './icons.type';
-
-const UNKNOWN_ICON: IconType = {
-  icon: 'fa-question-circle-o fa-spin',
-  label: 'Niet bekend',
-};
 
 @Component({
   selector: 'ui-lib-icons',
@@ -12,14 +6,15 @@ const UNKNOWN_ICON: IconType = {
   styleUrls: ['./icons.component.scss'],
 })
 export class IconsComponent implements OnInit {
+  UNKNOWN_ICON = 'bx bx-question-mark';
   @Input()
-  icon: IconType | undefined;
-  @Input()
-  title: string | undefined;
+  iconWithoutPrefix: string | undefined;
   @Input()
   fontsize: number | undefined;
+  @Input()
+  color: string | undefined;
 
   ngOnInit(): void {
-    if (!this.icon) this.icon = UNKNOWN_ICON;
+    if (!this.iconWithoutPrefix) this.iconWithoutPrefix = this.UNKNOWN_ICON;
   }
 }

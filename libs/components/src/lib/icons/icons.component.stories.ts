@@ -16,4 +16,8 @@ const Template: Story<IconsComponent> = (args: IconsComponent) => ({
 });
 
 export const Primary = Template.bind({});
-Primary.args = {};
+Primary.args = {
+  fontsize: 24,
+  iconWithoutPrefix: '',
+  color: '',
+};

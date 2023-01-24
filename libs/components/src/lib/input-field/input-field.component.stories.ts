@@ -33,4 +33,5 @@ Primary.args = {
   type: '',
   inputId: '',
   inputClass: '',
+  maxLength: 20,
 };

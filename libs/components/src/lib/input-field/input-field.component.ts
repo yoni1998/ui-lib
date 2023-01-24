@@ -30,6 +30,8 @@ export class InputFieldComponent implements OnInit {
   iconClassNameWithoutPrefix: string | undefined;
   @Input()
   type: string | undefined;
+  @Input()
+  maxLength: number | undefined;
 
   @Output() inputValue = new EventEmitter<string>();
 

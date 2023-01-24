@@ -23,6 +23,10 @@ export class ButtonComponent implements OnInit {
 
   ngOnInit(): void {
     this.buttonTypeCheck();
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    if (this.title!.length >= 10) {
+      console.error('title must not be greater than 10 characters');
+    }
   }
   buttonTypeCheck(): void {
     if (
