@@ -1,14 +1,14 @@
  <ui-lib-header [logo]="logo" [navigationList]="list" [appName]="appName"></ui-lib-header>
  <ui-lib-main-container >
-<!-- <ui-lib-button [disabled]="false" [buttonColor]="'green'"  [title]="title"></ui-lib-button>
-<ui-lib-modal-dialog [modalTitle]="modalTitle" [modalContent]="modalContent" [modalButtonTitle]="modalButtonTitle"></ui-lib-modal-dialog>-->
-<!--add label class
-<ui-lib-input-label [label]="'lol'" >
-    <ui-lib-input-field [placeholder]="'haha'"></ui-lib-input-field>
-</ui-lib-input-label>-->
-<ui-lib-input-label [label]="'name'">
-<ui-lib-input-field [placeholder]="'name'" [width]="'11'" [type]="'text'" [iconColor]="'blue'" (inputValue)="getValue($event)"  [iconClassNameWithoutPrefix]="'bx-pencil'"  ></ui-lib-input-field>
-</ui-lib-input-label>
+
+<ui-lib-button [color]="'red'" [borderRadius]="10" [type]="'button'" [width]="7" [textColor]="'white'" [title]="'peop'" [borderStyle]="'2px solid green'" (onClick)="test($event)">
+
+</ui-lib-button>
+
+<ui-lib-icons>
+    
+</ui-lib-icons>
+
 </ui-lib-main-container>
  <ui-lib-footer 
  [footerColor]="'red'"

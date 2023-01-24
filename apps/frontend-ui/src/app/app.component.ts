@@ -56,4 +56,7 @@ export class AppComponent {
   getValue(e: any) {
     console.log(e);
   }
+  test(value: any) {
+    console.log(value);
+  }
 }

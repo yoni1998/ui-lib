@@ -18,4 +18,12 @@ const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
 export const Primary = Template.bind({});
 Primary.args = {
   disabled: true,
+  type: '',
+  title: '',
+  color: '',
+  textColor: '',
+  borderStyle: '',
+  width: 7,
+  height: 3.5,
+  borderRadius: 100,
 };

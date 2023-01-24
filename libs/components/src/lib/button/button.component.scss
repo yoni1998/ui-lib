@@ -1,18 +1,18 @@
 button {
-  background-color: rgb(197, 197, 197) ; /* Green */
-border: none;
 padding: 16px 32px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
 font-size: 16px;
 margin: 4px 2px;
-transition-duration: 0.4s;
 cursor: pointer;
-
+&:disabled {
+border-style: none !important;
+background-color: #cccccc !important;
+cursor: default !important;
+opacity: 1 !important;
+}
 &:hover {
-  background-color: #4CAF50;
-  color: white;
+  opacity: 0.8;
 }
 }
-

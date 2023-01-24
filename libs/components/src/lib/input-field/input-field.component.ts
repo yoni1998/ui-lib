@@ -17,9 +17,9 @@ export class InputFieldComponent implements OnInit {
   @Input()
   inputClass: string | undefined;
   @Input()
-  width: string | undefined;
+  width: number | undefined;
   @Input()
-  height: string | undefined;
+  height: number | undefined;
   @Input()
   border: string | undefined;
   @Input()

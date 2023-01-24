@@ -1,7 +1,12 @@
 <button
-type="button"
-class="vmm-button"
-[style.background-color]="buttonColor"
+[attr.type]="type ? type : 'button'"
+class="button"
+[style.height]="height ? height +'rem': '3.5rem'"
+[style.width]="width ? width +'rem' : '7rem'"
+[style.color]="textColor"
+[style.borderRadius]="borderRadius + '%'"
+[style.background-color]="color"
+[style.border]="borderStyle"
 [disabled]="disabled"
 (click)="onClick.emit($event)"
 >
