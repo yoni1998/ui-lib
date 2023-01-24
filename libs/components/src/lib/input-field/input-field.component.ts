@@ -17,19 +17,19 @@ export class InputFieldComponent implements OnInit {
   @Input()
   inputClass: string | undefined;
   @Input()
-  inputWidth: string | undefined;
+  width: string | undefined;
   @Input()
-  inputHeight: string | undefined;
+  height: string | undefined;
   @Input()
-  inputBorder: string | undefined;
+  border: string | undefined;
   @Input()
-  inputBorderRadius: string | undefined;
+  borderRadius: string | undefined;
   @Input()
-  inputIconColor: string | undefined;
+  iconColor: string | undefined;
   @Input()
-  inputIconClassNameWithoutPrefix: string | undefined;
+  iconClassNameWithoutPrefix: string | undefined;
   @Input()
-  inputType: string | undefined;
+  type: string | undefined;
 
   @Output() inputValue = new EventEmitter<string>();
 
@@ -43,24 +43,24 @@ export class InputFieldComponent implements OnInit {
 
   inputTypeCheck(): void {
     if (
-      this.inputType === 'number' ||
-      this.inputType === 'text' ||
-      this.inputType === 'button' ||
-      this.inputType === 'checkbox' ||
-      this.inputType === 'date' ||
-      this.inputType === 'email' ||
-      this.inputType === 'hidden' ||
-      this.inputType === 'image' ||
-      this.inputType === 'password' ||
-      this.inputType === 'range' ||
-      this.inputType === 'submit' ||
-      this.inputType === 'tel' ||
-      this.inputType === 'url' ||
-      this.inputType === 'timestamp' ||
-      this.inputType === 'search' ||
-      !this.inputType
+      this.type === 'number' ||
+      this.type === 'text' ||
+      this.type === 'button' ||
+      this.type === 'checkbox' ||
+      this.type === 'date' ||
+      this.type === 'email' ||
+      this.type === 'hidden' ||
+      this.type === 'image' ||
+      this.type === 'password' ||
+      this.type === 'range' ||
+      this.type === 'submit' ||
+      this.type === 'tel' ||
+      this.type === 'url' ||
+      this.type === 'timestamp' ||
+      this.type === 'search' ||
+      !this.type
     ) {
-      console.log('Type input: ' + this.inputType);
+      console.log('Type input: ' + this.type);
     } else {
       console.error('Invalid input type');
     }

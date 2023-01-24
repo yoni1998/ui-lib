@@ -1,17 +1,17 @@
-<ng-container *ngIf="inputIconClassNameWithoutPrefix">
+<ng-container *ngIf="iconClassNameWithoutPrefix">
     <span [ngClass]="'inputIcon'" >
-    <i [ngClass]="'bx ' + inputIconClassNameWithoutPrefix" [style.color]="inputIconColor"></i>
+    <i [ngClass]="'bx ' + iconClassNameWithoutPrefix" [style.color]="iconColor"></i>
 </span>
 </ng-container>
 <input
 aria-label="input"
 #inputElement
-[attr.type]="inputType ? inputType : 'text'"
+[attr.type]="type ? type : 'text'"
 (input)="getValue(inputElement.value)"
-[style.width]="inputWidth ? inputWidth +'rem' : '15rem'"
-[style.height]="inputHeight ? inputHeight +'rem' : '2rem'"
-[style.border]="inputBorder"
-[style.border-radius]="inputBorderRadius"
+[style.width]="width ? width +'rem' : '15rem'"
+[style.height]="height ? height +'rem' : '2rem'"
+[style.border]="border"
+[style.border-radius]="borderRadius"
 [attr.id]="inputId"
 [placeholder]="placeholder"
 [disabled]="disabled ? true : null"
