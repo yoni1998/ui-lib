@@ -1,3 +1,7 @@
+import { MainContainerModule } from './main-container/main-container.module';
+import { IconsModule } from './icons/icons.module';
+import { InputFieldModule } from './input-field/input-field.module';
+import { ButtonModule } from './button/button.module';
 import { DynamicFormService } from './dynamic-form/service/dynamic-form.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -32,7 +36,15 @@ import { DynamicFormInputsComponent } from './dynamic-form/components/dynamic-fo
 import { LabelPositionDirective } from './input-label/directives/label-position.directive';
 
 @NgModule({
-  imports: [CommonModule, ReactiveFormsModule, FormsModule],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule,
+    ButtonModule,
+    InputFieldModule,
+    IconsModule,
+    MainContainerModule,
+  ],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -45,15 +57,11 @@ import { LabelPositionDirective } from './input-label/directives/label-position.
     HeaderComponent,
     FooterComponent,
     SideHeaderComponent,
-    MainContainerComponent,
-    ButtonComponent,
     ModalDialogComponent,
     TextareaComponent,
     InputLabelComponent,
     DropdownComponent,
-    InputFieldComponent,
     TableComponent,
-    IconsComponent,
     TableHeaderComponent,
     TableBodyComponent,
     SortIconsComponent,
