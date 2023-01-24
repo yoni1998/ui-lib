@@ -19,5 +19,8 @@ const Template: Story<MainContainerComponent> = (
 
 export const Primary = Template.bind({});
 Primary.args = {
-  contentWrapper: false,
+  containerColor: '',
+  width: 92.5,
+  height: 50,
+  borderRadius: 0,
 };

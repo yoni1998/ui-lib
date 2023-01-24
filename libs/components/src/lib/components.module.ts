@@ -94,6 +94,7 @@ import { LabelPositionDirective } from './input-label/directives/label-position.
     TextContainerComponent,
     DynamicFormComponent,
     DynamicFormInputsComponent,
+    LabelPositionDirective,
   ],
 })
 export class ComponentsModule {}
