@@ -1,25 +1,13 @@
 * {
     font-family: "Poppins", sans-serif;
-  }
+    color: #999;
+}
 footer {
+    height: 17rem;
+    padding-right: -1rem;
+    z-index: -1;
     margin: -0.6rem;
     bottom: 0px;
-    width: 102.4%;
-    height: 17rem;
-    z-index: -1;
-
-}
-
-.footer > * {
-    flex: 1 100%;
-   
-}
-.footer-left {
-    margin-right: 1.25rem;
-    margin-bottom: 2rem
-}
-.footer-left img {
-    width: 50%;
 }
 p {
     margin-left: 1.5rem;
@@ -31,66 +19,33 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 6rem;
-    
-}
-.footer ul {
-    list-style: none;
-    padding-left: 0;
-    
-}
-.footer li {
-    line-height: 2rem;
-}
-
-.footer a {
-    text-decoration: none;
-    list-style: none;
-    
-}
-.footer-right {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none;
-    margin-left: 2rem;
-}
-.footer-right li a {
-    text-decoration: none;
-}
-.footer-right > * {
-    flex: 1 50%;
-    margin-right: 1.25rem;
-}
-.box a {
-    color: #999;
+    color: #e7f2f4;
 }
 
 .footer-bottom {
-    color: #999;
     text-align: center;
-   
-
 }
 .footer-left p {
-    padding-right: 20%;
-    color: #999;
+    padding-right: 10%;
 }
 .socials {
     display: flex;
     justify-content: center;
-  
+    padding-bottom: 1rem;
+    margin-top: 2rem;
 }
 .socials a {
-background-color: #364a62;
-width: 40px;
-height: 40px;
-display: inline-block;
-margin-top: 3rem;
-margin-left: 2%;
+    border-radius: 10%;
+    background-color: #364a62;
+    width: 40px;
+    height: 40px;
+    display: inline;
+    margin-top: 3rem;
+    margin-left: 2%;
+    &:hover {
+        transform: scale(1.5);
+        transition: ease-in 0.2s
+    }
 }
 
 .socials a i {
@@ -100,33 +55,25 @@ margin-left: 2%;
 }
 
 .linksLeft {
-    width: 25%;
+    width: 15%;
+    margin-left: 8rem;
     float: left;
     height: 10rem;
-    color: rgb(166, 166, 166);
 }
 .linksRight {
-    width: 25%;
+    margin-right: 8rem;
+    width: 15%;
     float: right;
     height: 10rem;
-    color: rgb(166, 166, 166);
 }
 
 @media screen and (min-width: 600px) {
-
-.footer-right > * {
-    flex: 1;
-}
 .footer-left {
     flex: 1 0px;
-}
-.footer-right {
-    flex: 2 0px;
 }
 }
 
 @media screen and (max-width: 700px) {
-
     .linksLeft, .linksRight {
     display: none;
     }
@@ -134,15 +81,3 @@ margin-left: 2%;
         height: 50vh;
     }
     }
-
-@media screen and (max-width: 600px) { 
-.footer {
-    padding: 15px;
-    
-}
-.socials a {
-    margin-right: 1rem;
-    margin-left: 3rem;
-}
-
-}
