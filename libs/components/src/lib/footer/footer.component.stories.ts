@@ -16,4 +16,11 @@ const Template: Story<FooterComponent> = (args: FooterComponent) => ({
 });
 
 export const Primary = Template.bind({});
-Primary.args = {};
+Primary.args = {
+  footerDescription: '',
+  copyRightsName: '',
+  linkHeaders: [],
+  linkHeaderOptions: [],
+  version: '',
+  footerColor: '',
+};

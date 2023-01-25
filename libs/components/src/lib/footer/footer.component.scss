@@ -1,13 +1,8 @@
-
-
 footer {
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    margin: -1rem;
+    margin: -0.6rem;
     bottom: 0px;
-    width: 110%;
-    height: 15rem;
+    width: 102.4%;
+    height: 17rem;
     z-index: -1;
 }
 
@@ -68,16 +63,12 @@ h2{
 .box a {
     color: #999;
 }
-ul ul {
-    list-style-type: none ;
-    margin-left: 7rem;
-}
+
 .footer-bottom {
     text-align: center;
     color: #999;
-    padding-top: 30px;
+    
     margin-right: 5rem;
-
 }
 .footer-left p {
     padding-right: 20%;
@@ -119,6 +110,7 @@ margin-left: 2%;
 @media screen and (max-width: 600px) { 
 .footer {
     padding: 15px;
+    
 }
 .socials a {
     margin-right: 1rem;
