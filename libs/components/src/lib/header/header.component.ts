@@ -7,7 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class HeaderComponent {
   @Input() appName: string | undefined;
-  @Input() navigationList: string[] | undefined;
   @Input() logo: string | undefined;
   @Input() headerColor: string | undefined;
+  @Input() logoWidth: number | undefined;
+  @Input() logoHeight: number | undefined;
 }

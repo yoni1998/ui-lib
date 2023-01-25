@@ -1,12 +1,7 @@
-<header [style.backgroundColor]="headerColor">
-  <img src="{{logo}}" class="logo" alt="logo">
-  <h1>{{ appName }}</h1>
-  <div class="navbar" *ngFor="let items of navigationList">
-      <a  routerLink='/items' routerLinkActive="router-link-active" >{{ items }}</a>
-    </div>
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+<header uiLibSideHeader [style.backgroundColor]="headerColor">
+    <img src="{{ logo }}" [style.width]="logoWidth ? logoWidth +'rem' : '6rem'" [style.height]="logoHeight ? logoHeight + 'rem' : '6rem'" class="logo" alt="logo">
+  <h1 >{{ appName }}</h1>
+  <div class="navbar">
+    <ng-content></ng-content>
     </div>
 </header>

@@ -6,12 +6,13 @@ header{
   background: #0F2027;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    margin: -1rem;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-
+  margin: -1rem;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  height: 15vh;
   }
+  
   @media (max-width: 768px) {
     header {
       padding: 10px;
@@ -22,37 +23,11 @@ header{
     display: inline-block;
   }
 
-  .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    cursor: pointer;
-    
-  }
-
-  .navbar a:hover {
-    border-bottom: #4CAF50 1px solid;
-    transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-  }
-
-
-  .navbar a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
-
   .logo {
-    width: 8rem;
-    height: 8rem;
-    float: left;
+    width: 6rem;
+    height: 6rem;
     padding: 0;
     margin: 0.5rem;
-    margin-right: -8rem;
     cursor: pointer;
     opacity: 0.8;
     box-shadow: inset;
@@ -66,38 +41,11 @@ header{
     
   }
 
-  .hamburger  {
-    display: none;
-    cursor: pointer;
-  }
-  .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: white;
-  }
 
   @media(max-width: 768px){
     .logo{
       display: none;
     }
-    .hamburger {
-      display: block;
-      float: right;
-      margin-top: -3rem;
-    }
-    .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-      }
       .navbar  {
       position: fixed;
       left: -100%;

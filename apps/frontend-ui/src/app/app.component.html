@@ -1,11 +1,8 @@
- <ui-lib-header [logo]="logo" [navigationList]="list" [appName]="appName"></ui-lib-header>
+ <ui-lib-header  [logo]="logo" [appName]="appName">
+    <a  routerLink='/items' routerLinkActive="router-link-active" >cool</a>
+    <a  routerLink='/items' routerLinkActive="router-link-active" >cool</a>
+    <a  routerLink='/items' routerLinkActive="router-link-active" >cool</a>
+ </ui-lib-header>
 
- <ui-lib-main-container >
-    <ui-lib-input-label uiLibLabelPositionBlock [label]="'name'">
-        <ui-lib-input-field></ui-lib-input-field>
-    </ui-lib-input-label>
-    <ui-lib-button>
-        wow
-    </ui-lib-button>
-</ui-lib-main-container>
+ <ui-lib-footer></ui-lib-footer>
 
