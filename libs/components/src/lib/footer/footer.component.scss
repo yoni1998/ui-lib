@@ -6,9 +6,8 @@ footer {
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin: -1rem;
     bottom: 0px;
-    width: 100rem;
-    height: 22rem;
-   
+    width: 110%;
+    height: 15rem;
     z-index: -1;
 }
 
@@ -84,18 +83,23 @@ ul ul {
     padding-right: 20%;
     color: #999;
 }
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-right: 5rem;
+}
 .socials a {
 background-color: #364a62;
 width: 40px;
 height: 40px;
 display: inline-block;
-margin-top: 2rem;
+margin-top: 3rem;
 margin-left: 2%;
 }
 
 .socials a i {
     color: #e7f2f4;
-    padding: 10px 12px;
+    padding: 10px 10px;
     font-size: 20px;
 }
 @media screen and (min-width: 600px) {

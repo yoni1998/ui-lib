@@ -1,31 +1,8 @@
 <footer [style.background-color]="footerColor">
     <div class="footer-left">
         <p>{{ footerDescription }}</p>
-    
         </div>
-        <ul class="footer-right" >
-            <li >
-                <h2 >test</h2>
-                <ul class="box">
-                    <li><a href="#">theme design</a></li>
-                    <li><a href="#">plugin design</a></li>
-                </ul>
-            </li>
-            <li class="features">
-                <h2>ha</h2>
-                <ul class="box">
-                    <li><a href="#">theme design</a></li>
-                    <li><a href="#">plugin design</a></li>
-                </ul>
-            </li>
-            <li>
-                <h2>lol</h2>
-                <ul class="box">
-                    <li><a href="#">theme design</a></li>
-                    <li><a href="#">plugin design</a></li>
-                </ul>
-            </li>
-        </ul>
+        <ng-content></ng-content>
         <div class="socials">
             <a aria-label="facebook link" href="{{facebookSocialLink}}"><i class='bx bxl-meta'></i></a>
             <a href="{{twitterSocialLink}}" aria-label="twitter link"><i class='bx bxl-twitter'></i></a>
@@ -33,6 +10,6 @@
             <a href="{{instagramSocialLink}}" aria-label="instagram link"><i class='bx bxl-instagram' ></i></a>
 </div>
         <div class="footer-bottom">
-            <p>all rights reserved by &copy; {{ copyRightsName }} 2023 </p>
+            <p *ngIf="copyRightsName">all rights reserved by &copy; {{ copyRightsName }} 2023 </p>
         </div>
 </footer>

@@ -16,4 +16,10 @@ const Template: Story<HeaderComponent> = (args: HeaderComponent) => ({
 });
 
 export const Primary = Template.bind({});
-Primary.args = {};
+Primary.args = {
+  appName: '',
+  logo: '',
+  headerColor: '',
+  logoWidth: 6,
+  logoHeight: 6,
+};
