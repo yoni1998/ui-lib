@@ -4,6 +4,28 @@
     <a  routerLink='/items' routerLinkActive="router-link-active" >cool</a>
  </ui-lib-header>
 
- <ui-lib-footer [copyRightsName]="'yoni vindelinckx'" [footerDescription]="description">
+ <ui-lib-main-container [width]="75" [height]="80">
+  <ui-lib-input-label [label]="'yoni'">
+    <ui-lib-input-field></ui-lib-input-field>
+  </ui-lib-input-label>
+ </ui-lib-main-container>
+
+ <ui-lib-footer [titleLeft]="'test'" [titleRight]="'yoni'" [copyRightsName]="'yoni vindelinckx'" [footerDescription]="description">
+ <div left>
+   <ul >
+   <li>okay</li>
+   <li>okay</li>
+   <li>okay</li>
+   <li>okay</li>
+ </ul>
+</div>
+<div right>
+ <ul>
+   <li>okeee</li>
+   <li>okadfdy</li>
+   <li>df</li>
+   <li>ofdfdkay</li>
+ </ul>
+</div>
  </ui-lib-footer>
 

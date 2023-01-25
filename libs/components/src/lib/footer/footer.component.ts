@@ -6,6 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
+  @Input() titleLeft: string | undefined;
+  @Input() titleRight: string | undefined;
   @Input() footerDescription: string | undefined;
   @Input() copyRightsName: string | undefined;
   @Input() linkHeaders: string[] | undefined;

@@ -2,9 +2,16 @@
     <div class="footer-left">
         <p>{{ footerDescription }}</p>
         </div>
-        <ng-content></ng-content>
+        <div class="linksLeft" *ngIf="titleLeft">
+            <h2>{{ titleLeft }}</h2>
+        <ng-content select="[left]"></ng-content>
+    </div>
+    <div  class="linksRight" *ngIf="titleRight" >
+        <h2>{{ titleRight }}</h2>
+    <ng-content select="[right]"></ng-content>
+</div>
         <div class="socials">
-            <a aria-label="facebook link" href="{{facebookSocialLink}}"><i class='bx bxl-meta'></i></a>
+            <a href="{{facebookSocialLink}}" aria-label="facebook link" ><i class='bx bxl-meta'></i></a>
             <a href="{{twitterSocialLink}}" aria-label="twitter link"><i class='bx bxl-twitter'></i></a>
             <a href="{{linkedInSocialLink}}" aria-label="linkedin link"><i class='bx bxl-linkedin-square' ></i></a>
             <a href="{{instagramSocialLink}}" aria-label="instagram link"><i class='bx bxl-instagram' ></i></a>

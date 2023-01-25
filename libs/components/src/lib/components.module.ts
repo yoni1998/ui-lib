@@ -1,7 +1,3 @@
-import { MainContainerModule } from './main-container/main-container.module';
-import { IconsModule } from './icons/icons.module';
-import { InputFieldModule } from './input-field/input-field.module';
-import { ButtonModule } from './button/button.module';
 import { DynamicFormService } from './dynamic-form/service/dynamic-form.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -38,15 +34,7 @@ import { HeaderStyleLeftDirective } from './header/directives/header-style-left.
 import { SideHeaderDirective } from './header/directives/side-header.directive';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    ReactiveFormsModule,
-    FormsModule,
-    ButtonModule,
-    InputFieldModule,
-    IconsModule,
-    MainContainerModule,
-  ],
+  imports: [CommonModule, ReactiveFormsModule, FormsModule],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -56,6 +44,10 @@ import { SideHeaderDirective } from './header/directives/side-header.directive';
     DynamicFormService,
   ],
   declarations: [
+    ButtonComponent,
+    InputFieldComponent,
+    MainContainerComponent,
+    IconsComponent,
     HeaderComponent,
     FooterComponent,
     ModalDialogComponent,
