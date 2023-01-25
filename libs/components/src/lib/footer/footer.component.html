@@ -2,11 +2,11 @@
     <div class="footer-left">
         <p>{{ footerDescription }}</p>
         </div>
-        <div class="linksLeft" *ngIf="titleLeft">
+        <div class="linksLeft" *ngIf="titleLeft !== undefined">
             <h2>{{ titleLeft }}</h2>
         <ng-content select="[left]"></ng-content>
     </div>
-    <div  class="linksRight" *ngIf="titleRight" >
+    <div  class="linksRight" *ngIf="titleRight !== undefined" >
         <h2>{{ titleRight }}</h2>
     <ng-content select="[right]"></ng-content>
 </div>
