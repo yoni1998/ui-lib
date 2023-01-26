@@ -1,5 +1,5 @@
-<div class="modal" [style.background-color]="modalColor" [style.width]="width ? width +'rem': '100%'" [style.height]="height ? height + 'rem': '100%'">
-    <div>
+<div class="modal"  [style.width]="width ? width +'rem': '100%'" [style.height]="height ? height + 'rem': '100%'">
+    <div [style.background-color]="modalColor">
         <h2 uiLibTitlePositionCenter [style.color]="titleColor" >{{ modalTitle }}</h2>
       <p>{{ modalContentText }}</p>
       <div class="modalContent">
