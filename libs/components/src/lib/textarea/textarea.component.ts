@@ -25,11 +25,11 @@ export class TextareaComponent {
   @Input()
   inputId: string | undefined;
   @Input()
-  maxHeight: string | undefined;
+  maxHeight: number | undefined;
   @Input()
-  width: string | undefined;
+  width: number | undefined;
   @Input()
-  height: string | undefined;
+  height: number | undefined;
   @Input() textAreaColor: string | undefined;
 
   @Output() getValue = new EventEmitter();

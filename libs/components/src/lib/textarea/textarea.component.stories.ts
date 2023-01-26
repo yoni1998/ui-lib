@@ -19,4 +19,12 @@ export const Primary = Template.bind({});
 Primary.args = {
   value: '',
   placeholder: '',
+  disabled: false,
+  maxLength: 255,
+  maxHeight: 50,
+  minLength: 0,
+  inputId: '',
+  width: 20,
+  height: 5,
+  textAreaColor: '',
 };
