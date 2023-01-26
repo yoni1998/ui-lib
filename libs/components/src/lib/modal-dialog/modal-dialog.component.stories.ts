@@ -16,4 +16,14 @@ const Template: Story<ModalDialogComponent> = (args: ModalDialogComponent) => ({
 });
 
 export const Primary = Template.bind({});
-Primary.args = {};
+Primary.args = {
+  modalTitle: '',
+  modalContentText: '',
+  modalButtonTitle: '',
+  modalColor: '',
+  width: 20,
+  height: 20,
+  titleColor: '',
+  withButton: false,
+  withIcon: false,
+};

@@ -1,7 +1,11 @@
-<div class="modal" [style.background-color]="modalColor">
+<div class="modal" [style.background-color]="modalColor" [style.width]="width ? width +'rem': '100%'" [style.height]="height ? height + 'rem': '100%'">
     <div>
-        <h2>{{ modalTitle }}</h2>
-      {{ modalContent }}
-      <ui-lib-button class="dialogButton"  (onClick)="closeModal()">{{ modalButtonTitle }}</ui-lib-button>
+        <h2 uiLibTitlePositionCenter [style.color]="titleColor" >{{ modalTitle }}</h2>
+      <p>{{ modalContentText }}</p>
+      <div class="modalContent">
+      <ng-content></ng-content>
+    </div>
+      <ui-lib-button *ngIf="withButton" class="dialogButton"  (onClick)="closeModal()">{{ modalButtonTitle }}</ui-lib-button>
+      <ui-lib-icons *ngIf="withIcon" class="closeIcon" [fontsize]="30" (click)="closeModal()" [iconWithoutPrefix]="'bx-window-close'"></ui-lib-icons>
     </div>
   </div>

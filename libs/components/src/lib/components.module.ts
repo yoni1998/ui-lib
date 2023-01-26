@@ -32,6 +32,7 @@ import { LabelPositionDirective } from './input-label/directives/label-position.
 import { HeaderStyleRightDirective } from './header/directives/header-style-right.directive';
 import { HeaderStyleLeftDirective } from './header/directives/header-style-left.directive';
 import { SideHeaderDirective } from './header/directives/side-header.directive';
+import { TitlePositionDirective } from './modal-dialog/directives/title-position.directive';
 
 @NgModule({
   imports: [CommonModule, ReactiveFormsModule, FormsModule],
@@ -73,6 +74,7 @@ import { SideHeaderDirective } from './header/directives/side-header.directive';
     HeaderStyleRightDirective,
     HeaderStyleLeftDirective,
     SideHeaderDirective,
+    TitlePositionDirective,
   ],
   exports: [
     HeaderComponent,
@@ -98,6 +100,10 @@ import { SideHeaderDirective } from './header/directives/side-header.directive';
     DynamicFormComponent,
     DynamicFormInputsComponent,
     LabelPositionDirective,
+    HeaderStyleRightDirective,
+    HeaderStyleLeftDirective,
+    SideHeaderDirective,
+    TitlePositionDirective,
   ],
 })
 export class ComponentsModule {}

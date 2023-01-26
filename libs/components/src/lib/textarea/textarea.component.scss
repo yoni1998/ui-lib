@@ -13,4 +13,11 @@ textarea {
       border: 1px solid rgb(32, 114, 29) !important;
       outline: none;
   }
+  &:disabled {
+    background-color: #cccccc !important;
+    cursor: default !important;
+    opacity: 1 !important;
+    resize: none;
+}
   }
+
