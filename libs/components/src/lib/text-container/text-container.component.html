@@ -1,6 +1,6 @@
 <div class="container" [style.width]="width ? width+'rem' : '35%'" [style.height]="height ? height +'rem': ''" [style.float]="containerPosition" [style.backgroundColor]="containerColor ? containerColor : '#fff7f7'">
     <div class="textPosition">
-        <h2 [style.color]="titleColor">{{ title }}</h2>
+        <h2 [style.color]="titleColor" [style.textDecoration]="textDecoration ? textDecoration : 'underline'">{{ title }}</h2>
         <p [style.color]="textColor ? textColor : '#444444'">{{ text }} </p>
     </div>
 </div>

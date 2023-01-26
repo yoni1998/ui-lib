@@ -1,4 +1,10 @@
-import { Component, Input } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  Output,
+} from '@angular/core';
 
 @Component({
   selector: 'ui-lib-textarea',
@@ -21,8 +27,14 @@ export class TextareaComponent {
   @Input()
   maxHeight: string | undefined;
   @Input()
-  maxWidth: string | undefined;
+  width: string | undefined;
   @Input()
   height: string | undefined;
   @Input() textAreaColor: string | undefined;
+
+  @Output() getValue = new EventEmitter();
+
+  getTextareaValue(value: any) {
+    this.getValue.emit(value);
+  }
 }

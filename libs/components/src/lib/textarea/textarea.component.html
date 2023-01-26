@@ -1,13 +1,15 @@
 <textarea
-[style.background-color]="textAreaColor"
-    class="vmm-textarea"
+    aria-label="textarea"
+    [style.background-color]="textAreaColor"
+    class="textarea"
     [id]="inputId"
+    #textarea
+    (blur)="getTextareaValue(textarea.value)"
     [placeholder]="placeholder"
     [disabled]="disabled ? true : null"
-    [maxLength]="maxLength"
+    [maxLength]="maxLength ? maxLength : 255"
     [minLength]="minLength"
     [style.maxHeight]="maxHeight"
-    [style.maxWidth]="maxWidth"
-    [style.height]="height"
-    [value]="value"
+    [style.width]="width ? width + 'rem' : '20rem'"
+    [style.height]="height ? height +'rem' : '5rem'"
   ></textarea>

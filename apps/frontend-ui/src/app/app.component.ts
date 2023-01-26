@@ -59,4 +59,7 @@ export class AppComponent {
   test(value: any) {
     console.log(value);
   }
+  hahaha(value: any) {
+    console.log(value);
+  }
 }

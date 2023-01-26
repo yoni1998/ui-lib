@@ -14,4 +14,5 @@ export class TextContainerComponent {
   @Input() textColor: string | undefined;
   @Input() width: number | undefined;
   @Input() height: number | undefined;
+  @Input() textDecoration: string | undefined;
 }

@@ -18,11 +18,12 @@
     }
     p {
         color: #444444;
+        line-height: 1.4rem;
     }
     .textPosition {
         padding: 2rem;
     }
-    @media screen and  (max-width: 1033px) {
+    @media screen and  (max-width: 1400px) {
         max-height: 30rem;
         overflow: hidden;
         width: 30rem;
