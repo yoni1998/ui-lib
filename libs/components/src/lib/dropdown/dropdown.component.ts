@@ -1,4 +1,10 @@
-import { Component, Input, SimpleChanges } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  SimpleChanges,
+} from '@angular/core';
 
 @Component({
   selector: 'ui-lib-dropdown',
@@ -7,12 +13,17 @@ import { Component, Input, SimpleChanges } from '@angular/core';
 })
 export class DropdownComponent {
   @Input()
-  public disabled = false;
+  disabled: boolean | undefined;
   @Input()
   value: any = '';
   @Input()
   inputId: string | undefined;
-  @Input() width: string | undefined;
+  @Input()
+  width: number | undefined;
+  @Input()
+  dropdownBackgroundColor: string | undefined;
+
+  @Output() getValue = new EventEmitter();
 
   constructor() {}
 
@@ -32,11 +43,16 @@ export class DropdownComponent {
     this.disabled = disabled;
   }
 
-  onChange(value: any) {}
+  onChange(value: any) {
+    this.getValue.emit(value);
+  }
 
-  onTouched() {}
+  onTouched(value: any) {
+    this.getValue.emit(value);
+  }
 
-  ngOnChanges(changes: SimpleChanges): void {
+  // eslint-disable-next-line @angular-eslint/use-lifecycle-interface
+  ngOnChanges(): void {
     if (!this.inputId) throw new Error('[inputId] should be specified');
   }
 }

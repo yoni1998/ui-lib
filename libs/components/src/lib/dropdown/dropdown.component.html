@@ -1,12 +1,14 @@
 <select
+    #dropdown
     class="dropdown"
     title="dropdown"
     [value]="value"
     [id]="inputId"
-    [style.width]="width"
-    [disabled]="disabled ? true : null"
+    [style.backgroundColor]="dropdownBackgroundColor"
+    [style.width]="width ? width +'rem' : '15rem'"
+    [disabled]="disabled"
     (input)="onChange($event.target)"
-    (blur)="onTouched()"
+    (blur)="onTouched(dropdown.value)"
   >
     <ng-content></ng-content>
   </select>
