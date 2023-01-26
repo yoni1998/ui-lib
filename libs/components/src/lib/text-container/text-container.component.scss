@@ -1,0 +1,35 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    width: 35%;
+    max-width: 1200px;
+    margin: 1rem auto;
+    border-radius: 10%;
+    background-color: #fff7f7;
+ 
+    &:hover {
+        background-color: #ffffff;
+        transition: ease-in-out 2s;
+    }
+    h2 {
+      text-decoration:underline;
+      cursor: default;
+    }
+    p {
+        color: #444444;
+    }
+    .textPosition {
+        padding: 2rem;
+    }
+    @media screen and  (max-width: 1033px) {
+        max-height: 30rem;
+        overflow: hidden;
+        width: 30rem;
+        .textPosition {
+            padding: 0.5rem;
+        }
+    }
+   }
+
+  

@@ -18,4 +18,12 @@ const Template: Story<TextContainerComponent> = (
 });
 
 export const Primary = Template.bind({});
-Primary.args = {};
+Primary.args = {
+  title: '',
+  containerPosition: '',
+  containerColor: '',
+  titleColor: '',
+  textColor: '',
+  width: 35,
+  height: 10,
+};
