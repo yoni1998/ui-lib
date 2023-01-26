@@ -3,6 +3,7 @@ import {
   EventEmitter,
   Input,
   OnChanges,
+  OnInit,
   Output,
 } from '@angular/core';
 
@@ -12,16 +13,17 @@ import {
   styleUrls: ['./textarea.component.scss'],
 })
 export class TextareaComponent {
+  public charCount = 0;
   @Input()
-  public disabled: boolean | undefined;
+  disabled: boolean | undefined;
   @Input()
-  public value = '';
+  value: string | undefined;
   @Input()
-  public placeholder = '';
+  placeholder: string | undefined;
   @Input()
-  public maxLength: number | undefined;
+  maxLength: number | undefined;
   @Input()
-  public minLength: number | undefined;
+  minLength: number | undefined;
   @Input()
   inputId: string | undefined;
   @Input()
@@ -36,5 +38,9 @@ export class TextareaComponent {
 
   getTextareaValue(value: any) {
     this.getValue.emit(value);
+  }
+
+  updateCharCount(value: any) {
+    this.charCount = value.length;
   }
 }

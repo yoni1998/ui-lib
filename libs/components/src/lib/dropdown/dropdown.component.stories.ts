@@ -19,4 +19,7 @@ export const Primary = Template.bind({});
 Primary.args = {
   disabled: false,
   value: '',
+  inputId: '',
+  width: 20,
+  dropdownBackgroundColor: '',
 };
