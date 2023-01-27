@@ -4,6 +4,7 @@
     font-family: "Poppins", sans-serif;
     color: #999;
 }
+// desktop
 footer {
     height: 17rem;
     padding-right: -1rem;
@@ -68,15 +69,16 @@ h2{
     float: right;
     height: 10rem;
 }
+
   // smartphone style
     @media only screen and (max-width: $sm) {
-    .linksLeft, .linksRight {
-        display: none;
-        }
         footer {
             height: 100%;
             margin: -1rem
         }
+        .linksLeft, .linksRight {
+            display: none;
+            }
         .footer-bottom {
             padding: 0 1rem 0.8rem 0;
         }
@@ -93,22 +95,18 @@ h2{
         .footer-bottom {
             display: none;
         }
-  }
+}
 
   // tablet style
     @media only screen and (min-width: $md) and (max-width: 1024px) {
-    .description {
-        flex: 1 0px;
+        footer {
+            height: 100%;
+            margin: -1rem
+        }
+        .description {
+            flex: 1 0px;
     }
-    footer {
-        height: 100%;
-        margin: -1rem
-    }
-    .footer-bottom {
-        padding: 0 1rem 0.8rem 0;
+        .footer-bottom {
+            padding: 0 1rem 0.8rem 0;
     }
 }
-  // desktop style
-    @media only screen and (min-width: $lg) {
-    }
-    
