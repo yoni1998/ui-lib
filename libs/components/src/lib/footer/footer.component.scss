@@ -1,3 +1,5 @@
+@import '../../../../.././apps/frontend-ui/src/styles.scss';
+
 * {
     font-family: "Poppins", sans-serif;
     color: #999;
@@ -66,18 +68,47 @@ h2{
     float: right;
     height: 10rem;
 }
-
-@media screen and (min-width: 600px) {
-.footer-left {
-    flex: 1 0px;
-}
-}
-
-@media screen and (max-width: 700px) {
+  // smartphone style
+    @media only screen and (max-width: $sm) {
     .linksLeft, .linksRight {
-    display: none;
+        display: none;
+        }
+        footer {
+            height: 100%;
+            margin: -1rem
+        }
+        .footer-bottom {
+            padding: 0 1rem 0.8rem 0;
+        }
+        
+}
+@media only screen and (max-width: $md)  {
+    footer {
+        height: 100%;
+        margin: -1rem
+    }
+    .linksLeft, .linksRight {
+        display: none;
+        }
+        .footer-bottom {
+            display: none;
+        }
+  }
+
+  // tablet style
+    @media only screen and (min-width: $md) and (max-width: 1024px) {
+    .footer-left {
+        flex: 1 0px;
     }
     footer {
-        height: 50vh;
+        height: 100%;
+        margin: -1rem
     }
+    .footer-bottom {
+        padding: 0 1rem 0.8rem 0;
     }
+}
+  // desktop style
+    @media only screen and (min-width: $lg) {
+    }
+    

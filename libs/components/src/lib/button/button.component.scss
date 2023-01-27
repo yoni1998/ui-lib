@@ -1,9 +1,11 @@
+@import'../../../../.././apps/frontend-ui/src/styles.scss';
+
 button {
 text-align: center;
 text-decoration: none;
 display: inline-block;
 font-size: 18px;
-margin: 4px 2px;
+margin: 0.5rem 0.5rem;
 cursor: pointer;
 &:disabled {
 border-style: none !important;
@@ -14,4 +16,18 @@ opacity: 1 !important;
 &:hover {
   opacity: 0.8;
 }
+
+  // smartphone style
+  @media only screen and (max-width: $sm) {
+
+  }
+  // tablet style
+  @media only screen and (min-width: $md) and (max-width: 1024px){
+  
+  }
+  // desktop style
+  @media only screen and (min-width: $lg) {
+  
+  }
 }
+

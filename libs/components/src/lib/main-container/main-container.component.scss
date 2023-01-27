@@ -1,14 +1,26 @@
+@import '../../../../.././apps/frontend-ui/src/styles.scss';
+
 .container {
   display: block;
   z-index: 1;
   padding: 1rem;
   margin: 4rem auto;
   overflow: scroll ;
-  @media (min-width: 400px) {
-    width: 80%;
-  }
-  @media (min-width: 800px) {
-    width: 70%;
-  }
+      // smartphone style
+      @media only screen and (max-width: $sm) {
+        overflow: unset;
+        height: 100% !important;
+        width: 100% !important;
+      }
+      // tablet style
+      @media only screen and (min-width: $md)and (max-width: 1024px) {
+        overflow: unset;
+        height: 100% !important;
+        width: 100% !important;
+      }
+      // desktop style
+      @media only screen and (min-width: $lg) {
+      
+      }
 }
 

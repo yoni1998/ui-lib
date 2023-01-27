@@ -1,3 +1,5 @@
+@import '../../../../../apps/frontend-ui/src/styles.scss';
+
 * {
     font-family: "Poppins", sans-serif;
 }
@@ -23,14 +25,26 @@
     .textPosition {
         padding: 2rem;
     }
-    @media screen and  (max-width: 1400px) {
-        max-height: 30rem;
-        overflow: hidden;
-        width: 30rem;
-        .textPosition {
-            padding: 0.5rem;
-        }
-    }
-   }
+     // smartphone style
+    @media only screen and (max-width: $sm)  {
+    width: 90% !important;
+    margin: 1rem 0.5rem;
+    border-radius: 5%;
+    overflow: hidden;
+}
+@media only screen and (max-width: $md)  {
+  width: 90% !important;
+  margin: 1rem 0.5rem;
+  border-radius: 5%;
+  overflow: hidden;
+}
+  // tablet style
+    @media only screen and (min-width: $md)and (max-width: 1024px) {
+    border-radius: 5%;
+    width: 80% !important;
+}
 
-  
+  // desktop style
+    @media only screen and (min-width: $lg) {
+}
+}

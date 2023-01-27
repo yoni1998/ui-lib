@@ -1,3 +1,5 @@
+@import '../../../../.././apps/frontend-ui/src/styles.scss';
+
 * {
   font-family: 'Flanders Art Sans', 'Verdana', serif;
 }
@@ -23,6 +25,18 @@ textarea {
     opacity: 1 !important;
     resize: none;
 }
+  // smartphone style
+  @media only screen and (max-width: $sm) {
+    width: 10rem !important;
+  }
+  // tablet style
+  @media only screen and (min-width: $md) and (max-width: 1024px){
+  
+  }
+  // desktop style
+  @media only screen and (min-width: $lg) {
+  
+  }
   }
 
   .char-count {
@@ -30,5 +44,6 @@ textarea {
     width: 15rem;
     position: sticky !important;
     display: block;
+    margin: 0 0 1.5rem 0;
   }
 

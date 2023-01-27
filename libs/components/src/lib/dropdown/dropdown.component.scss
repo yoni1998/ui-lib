@@ -1,3 +1,5 @@
+@import '../../../../.././apps/frontend-ui/src/styles.scss';
+
 .dropdown {
     width: 25%;
     max-height: 36px;
@@ -13,4 +15,16 @@
       border: 2px solid rgb(32, 114, 29) !important;
       outline: none;
   }
+  // smartphone style
+@media only screen and (max-width: $sm) {
+
+}
+// tablet style
+@media only screen and (min-width: $md) and (max-width: 1024px) {
+
+}
+// desktop style
+@media only screen and (min-width: $lg) {
+
+}
   }

@@ -28,6 +28,7 @@ header{
     cursor: pointer;
     opacity: 0.8;
     box-shadow: inset;
+    display: none;
   }
 
   @media screen and (max-width: 500px) {
@@ -40,9 +41,12 @@ header{
 
 
   @media(max-width: 768px){
-    .logo{
-      display: none;
-    }
+      .logo {
+        display: inline-block;
+      }
+      h1{
+        display: none;
+      }
       .navbar  {
       position: fixed;
       left: -100%;
