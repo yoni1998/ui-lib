@@ -27,7 +27,7 @@ h2{
 .footer-bottom {
     text-align: center;
 }
-.footer-left p {
+.description p {
     padding-right: 10%;
 }
 .socials {
@@ -97,7 +97,7 @@ h2{
 
   // tablet style
     @media only screen and (min-width: $md) and (max-width: 1024px) {
-    .footer-left {
+    .description {
         flex: 1 0px;
     }
     footer {
